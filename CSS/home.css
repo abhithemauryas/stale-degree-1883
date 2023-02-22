@@ -1,0 +1,99 @@
+#IN_THE_SPOTLIGHT_img{
+    display: flex;
+    margin: auto;
+    border: 1px solid red;
+    width: 80%;
+}
+#IN_THE_SPOTLIGHT_img>div>img{
+    width: 95%;
+    margin: auto;
+    /* margin: auto; */
+    /* border: 1px solid red; */
+}
+/* #IN_THE_SPOTLIGHT_img>div{
+   margin: auto;
+} */
+#Liquid_lipstick{
+    width: 80%;
+    margin: auto;
+}
+.h1_in_the{
+    text-align: center;
+}
+#Liquid_lipstick_rs{
+    width: 80%;
+    margin: auto;
+    padding-top: 4%;   
+}
+#LATEST_GLAMM_LAUNCHES_pic{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+#LATEST_GLAMM_LAUNCHES_pic>div>img{
+    width: 95%;
+}
+.shop_from_cate_pic{
+    display: flex;
+    border: 1px solid red;
+    margin: auto;
+    width: 80%;
+
+}
+.shop_from_cate_pic>div{
+  margin: auto;
+  border: 5px solid #d6d4d4;
+  border-radius: 50%;
+
+}
+.shop_from_cate_text{
+    display: flex;
+    border: 1px solid red;
+    margin: auto;
+    width: 80%;
+}
+.shop_from_cate_text>div{
+  margin: auto;
+  font-weight: bolder;
+}
+.mrg{
+ margin-left: 60px;
+}
+.mrg_skin{
+    margin-left: 40px;  
+}
+#show_your_look{
+    display: flex;
+    border: 1px solid red;
+    justify-content: space-around;
+    font-size: 16px;
+    font-family:sans-serif;
+    color: #333333;
+    font-style: unset;
+}
+#show_your_look_img{
+    border: 1px solid red;
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+#show_your_look_img>div>img{
+ height: 145px;
+ width: 160px;
+ 
+ justify-content: space-between;
+}
+#beware_pic{
+    padding-top: 4%;   
+}
+#show_your_look_img>div{
+    margin: auto;
+}
+#yt_video{
+    padding-top: 4%;
+}
+/* ---------------------about_section-------------------------*/
+#about_section{
+    display: flex;
+}
+/* ------------------------about_section_end-------------------- */
