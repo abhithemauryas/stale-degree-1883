@@ -1,7 +1,7 @@
 #IN_THE_SPOTLIGHT_img{
     display: flex;
     margin: auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 80%;
 }
 #IN_THE_SPOTLIGHT_img>div>img{
@@ -35,7 +35,7 @@
 }
 .shop_from_cate_pic{
     display: flex;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: auto;
     width: 80%;
 
@@ -48,7 +48,7 @@
 }
 .shop_from_cate_text{
     display: flex;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: auto;
     width: 80%;
 }
@@ -64,7 +64,7 @@
 }
 #show_your_look{
     display: flex;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     justify-content: space-around;
     font-size: 16px;
     font-family:sans-serif;
@@ -72,7 +72,7 @@
     font-style: unset;
 }
 #show_your_look_img{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     width: 80%;
     margin: auto;
@@ -95,5 +95,70 @@
 /* ---------------------about_section-------------------------*/
 #about_section{
     display: flex;
+    /* border: 1px solid red; */
+    width: 85%;
+    margin: auto;
+    justify-content: space-between;
+   
+}
+#about_section>div>p{
+    /* margin: auto; */
+     font-size: 12px;
+     font-weight: 600;
+}
+#about_section>div>h5{
+color:#7884A1 ;
+}
+.SUBSCRIBE{
+display: flex;
+/* border: 1px solid red; */
+justify-content: space-evenly;
+}
+.Sub1{
+    margin-right: 420px;
+}
+.Sub2{
+   margin-right: 90px;
+}
+.search_box_end{
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* border: 1px solid red; */
+    margin: auto;
+    padding-top: 2%;
+    width: 85%;
+    height:100px;
+
+  
+}
+#search_input{
+width: 260px;
+height: 40px;
+}
+#search_button{
+    width: 150px;
+    height: 40px;
+    background-color: black;
+    color: white;
+}
+#insta{
+color:#E435B1 ;
+font-size: 25px;
+}
+#twitter{
+    color: #03A9FA;
+    font-size: 22px;
+}
+#youtube{
+    color: #F44336;
+    font-size: 25px;
+}
+#pinterest{
+    color: #DB5656;
+    font-size: 25px;
+}
+.iosStore{
+    width: 150px;
 }
 /* ------------------------about_section_end-------------------- */

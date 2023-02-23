@@ -10,6 +10,7 @@ img {vertical-align: middle;}
   max-width: 100%;
   position: relative;
   margin: auto;
+  z-index: -1;
 }
 
 /* Next & previous buttons */
