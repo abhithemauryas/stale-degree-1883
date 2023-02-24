@@ -26,3 +26,6 @@ function displayProduct(data){
         container.append(api)
     })
 }
+document.querySelector(".logo_pic_myglmm").addEventListener("click",function(){
+    window.location.href="home.html"
+  })
