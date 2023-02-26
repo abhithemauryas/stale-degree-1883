@@ -1,5 +1,3 @@
-const { json } = require("express");
-
 
 document.querySelector("form").addEventListener("submit",(event)=>{
     event.preventDefault();
@@ -26,6 +24,7 @@ document.querySelector("form").addEventListener("submit",(event)=>{
                 let ans=await response.json();
                 alert(ans.msg);
                 localStorage.setItem("token",ans.token);
+                window.location.href="./home.html"
                 console.log(ans);
             }
         } catch (error) {

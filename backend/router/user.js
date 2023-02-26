@@ -3,6 +3,7 @@ const UserRouter=express.Router();
 const {UserModel}=require("../models/user.model");
 const bcrypt=require("bcrypt")
 const jwt=require("jsonwebtoken");
+const { CURSOR_FLAGS } = require("mongodb");
 UserRouter.post("/signup",async(req,res)=>{
     try {
         console.log(req.body);
@@ -32,13 +33,15 @@ UserRouter.post("/signup",async(req,res)=>{
 
 UserRouter.post("/login",async(req,res)=>{{
     try {
-        const {email,pass}=req.body;
+        const {email,password}=req.body;
+        console.log("obj");
+        console.log(req.body)
         let passdata=await UserModel.find({email});
-        if(passdata.length==0){
-            bcrypt.compare(pass, passdata[0].pass, function(err, result) {
+        if(passdata.length==1){
+            bcrypt.compare(password, passdata[0].password, function(err, result) {
                 if(result){
                     var token=jwt.sign({dataid:passdata[0]._id},process.env.token_secret);
-                    res.send({"msg":"Successfully logged in"},token);
+                    res.send({"msg":"Successfully logged in",token});
                 }
             });
         }else{
