@@ -1,7 +1,7 @@
 fethdata()
 async function fethdata(){
     try {
-        let response=await fetch("http://localhost:5600/makeup/get");
+        let response=await fetch("http://localhost:5600/hair/get");
         if(response.ok){
             let res=await response.json();
             console.log(res);

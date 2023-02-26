@@ -31,7 +31,7 @@ productRoute.post("/makeup/post",async(req,res)=>{
 productRoute.get("/hair/get",async(req,res)=>{
     try {
         let data=await HairModel.find();
-        res.send({"msg":"makeup data posted"},data)
+        res.send({"msg":"makeup data posted",data})
     } catch (error) {
         console.log(error);
         res.send({"msg":"something went wrong"});

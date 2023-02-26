@@ -1,4 +1,3 @@
-const { CLIENT_RENEG_LIMIT } = require("tls");
 
 fethdata()
 async function fethdata(){
@@ -39,11 +38,14 @@ function displayProduct(data){
        
         card.append(image,div,add,price,btn)
         container.append(card)
-        document.querySelectorAll(".cartbtn").addEventListener("click",(e)=>{
-           console.log("obj")
-          console.log(e)
-            // prod_post(element)
-        })
+    //    let allbtn= document.querySelectorAll(".cartbtn");
+    //    for(let divbtn in allbtn){
+    //     divbtn.addEventListener("click",(e)=>{
+    //         console.log("obj")
+    //     //    console.log(e)
+    //          // prod_post(element)
+    //      })
+    //    }
     })
 }
 document.querySelector(".logo_pic_myglmm").addEventListener("click",function(){
