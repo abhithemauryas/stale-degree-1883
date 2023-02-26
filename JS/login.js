@@ -1,30 +1,35 @@
+const { json } = require("express");
 
 
-document.querySelector("form").addEventListener("submit",function(event){
+document.querySelector("form").addEventListener("submit",(event)=>{
     event.preventDefault();
-        var res=JSON.parse(localStorage.getItem("Credentials"));
-        var ans=display(res);
-        if(ans==true){
-            // alert("loginSuccesful")
-            window.location="home.html"
-        }else{
-            alert("Wrong Credentials or You did not signUp yet")
-        }
-    })
-    function display(res){
-        let flag=false;
-        res.forEach((el)=>{
             let email=document.querySelector("#email").value;
             let password=document.querySelector("#pwd").value;
-            if(el.email==email&&el.pass==password){
-                flag=true;
+            if(email==""&&el.password==""){
+                alert("fill the all credentials");
+            }else{
+                let obj={email,password};
+                loginFetch(obj)
             }
-        })
-        if(flag==true){
-            return true;
-        }
-        else{
-            return false;
+    });
+
+    async function loginFetch(obj){
+        try {
+            let response=await fetch("http://localhost:5600/login",{
+                method:"POST",
+                headers:{
+                    'Content-Type':"Application/json"
+                },
+                body:JSON.stringify(obj)
+            });
+            if(response.ok){
+                let ans=await response.json();
+                alert(ans.msg);
+                localStorage.setItem("token",ans.token);
+                console.log(ans);
+            }
+        } catch (error) {
+            console.log(error);
         }
     }
     

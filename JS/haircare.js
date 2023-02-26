@@ -1,5 +1,3 @@
-const { CLIENT_RENEG_LIMIT } = require("tls");
-
 fethdata()
 async function fethdata(){
     try {
@@ -24,50 +22,22 @@ function displayProduct(data){
         let div =document.createElement("div")
         let desc=document.createElement("p")
         desc.setAttribute("class","desc_name")
-        let btn=document.createElement("button");
-        btn.setAttribute('class',"cartbtn");
-        btn.innerText="Add to bag"
         desc.innerText=element.desc
         div.append(desc)
         let add=document.createElement("p")
         add.setAttribute("class","add_name")
         add.innerText=element.additional
-      
         let price=document.createElement("p")
         price.setAttribute("class","price_name")
         price.innerText=element.price
-       
-        card.append(image,div,add,price,btn)
+   
+        card.append(image,div,add,price)
         container.append(card)
-        document.querySelectorAll(".cartbtn").addEventListener("click",(e)=>{
-           console.log("obj")
-          console.log(e)
-            // prod_post(element)
-        })
     })
 }
 document.querySelector(".logo_pic_myglmm").addEventListener("click",function(){
     window.location.href="home.html"
   })
-
-async function  prod_post(element){
-    try {
-        let response=await fetch("http://localhost:5600/cart/post",{
-            method:"POST",
-            headers:{
-                "Content-Type":"Application/json"
-            },
-        body:JSON.stringify(element)
-        });
-        if(response.ok){
-            let res=await response.json();
-            console.log(res)
-        }
-    } catch (error) {
-        console.log(error)
-    }
-};
-   
 
 
 //   ------------------------------------
