@@ -4,166 +4,331 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Makeup</title>
     <link rel="stylesheet" href="./CSS/navbar.css">
+    <link rel="stylesheet" href="./CSS/makeup.css">
+    <link rel="stylesheet" href="./CSS/home.css">
 </head>
 <body>
+  <div id="lock_drop1">
     <div id="navbar">
-        <div>
-          <p>LIT Liquid Matte Lipstick+ LIT Velvet Matte Liquid Lipstick GET this @ Re1</p>
-        </div>
-    
-        <h5>SHOP NOW</h5>
-        <div id="myglamm">
-          <h5>MyGlamm Store</h5>
+      <div>
+        <p>LIT Liquid Matte Lipstick+ LIT Velvet Matte Liquid Lipstick GET this @ Re1</p>
+      </div>
+
+      <h5 class="shop_now">SHOP NOW</h5>
+      <div id="myglamm">
+        <h5>MyGlamm Store</h5>
+      </div>
+    </div>
+    <div id="myglamm_logo">
+      <img src="https://files.myglamm.com/site-images/original/MyGlamm-Logo_1.jpg" alt="" class="logo_pic_myglmm">
+      <input type="search" placeholder="Find Lipstick, Eyeliner, Makeup Tutorial, etc" class="search_box"onkeypress="findme()">
+      <i class="fa-sharp fa-solid fa-bag-shopping"></i>
+      <a href="signup.html"><i class="fa-regular fa-user"></i></a>
+    </div>
+    <!-- -------------------------------------------------------------------- -->
+       <div id="lock_drop">
+      <div class="dropdown">
+      <a href="home.html"><button class="dropbtn">Home</button></a>
+        <div class="dropdown-content">
+
         </div>
       </div>
-      <div id="myglamm_logo">
-        <img src="https://files.myglamm.com/site-images/original/MyGlamm-Logo_1.jpg" alt="" class="logo_pic">
-        <input type="search" placeholder="Find Lipstick, Eyeliner, Makeup Tutorial, etc" class="search_box">
-        <i class="fa-sharp fa-solid fa-bag-shopping"></i>
-        <i class="fa-regular fa-user"></i>
+      <div class="dropdown">
+        <a href="makeup.html"><button class="dropbtn">Makeup</button></a>
+        <div></div>
+        <div class="dropdown-content">
+
+          <a href="#"> <h4>LIPS</h4> </a>
+          <a href="#">Lipstick</a>
+          <a href="#">Crayon Lipstick</a>
+          <a href="#">Liquid Lipstick</a>
+          <a href="#">Hi_Shine</a>
+          <a href="#">Lipstick</a>
+          <a href="#">Matte Lipstick</a>
+          <a href="#">Lip Gloss</a>
+          <a href="#">Lip Liner</a>
+          <a href="#">Lip Glitter</a>
+          <a href="#">Lip Stain</a>
+          <a href="#">Lip kit</a>
+
+        </div>
+        <!-- <div class="dropdown-content">
+          <h4>FACE</h4>
+          <a href="#">Fixing Powder</a>
+          <a href="#">Primer </a>
+          <a href="#">Concealer </a>
+          <a href="#">Foundation </a>
+          <a href="#">Compact </a>
+          <a href="#">Powder </a>
+          <a href="#">Setting Powde</a>
+          <a href="#">Banana Powder</a>
+          <a href="#">Sindoor </a>
+          <a href="#">Blush </a>
+          <a href="#">Cheek Stain </a>
+        </div>
+        <div class="dropdown-content">
+          <h4>EYES</h4>
+          <a href="#">Eye Shadow </a>
+          <a href="#">Eyeliner </a>
+          <a href="#">Eyebrows </a>
+          <a href="#">Glitter </a>
+          <a href="#">Kajal </a>
+
+        </div> -->
+        <div class="dropdown-content"> 
+          <h4>NAIL</h4>
+          <a href="#">Nail Lacqure </a>
+          <a href="#">Nail Polish </a>
+          <a href="#">Matte Nail </a>
+          <a href="#">Polish </a>
+          <!-- <h4>KITS AND COMBOS</h4>
+          <a href="#">Makeup Kits </a>
+          <a href="#">Bridal Makeup </a>
+          <a href="#">Makeup Gift </a> -->
+          <h4>MAKEUP ACCESSORIES</h4>
+          <a href="#">Makeup Brushes </a>
+          <a href="#">Eyeshadow Brushes </a>
+
+        </div>
+
       </div>
-      <div id="drop_down_border">
-        <div id="drop_down">
-          <P>HOME</P>
-          <div id="drop_down_ul">
-    
-          </div>
-        </div>
-    
-        <div id="drop_down">
-          <P>MAKEUP</P>
-          <div id="drop_down_ul">
-            <div class="Makeup_table">
-              <div>
-                <h4>LIPS</h4>
-                <p>Lipstick</p>
-                <p>Crayon Lipstick</p>
-                <p>Liquid Lipstick</p>
-                <p>Hi_Shine</p>
-                <p>Lipstick</p>
-                <p>Matte Lipstick</p>
-                <p>Lip Gloss</p>
-                <p>Lip Liner</p>
-                <P>Lip Balm</P>
-                <P>Lip Glitter</P>
-                <P>Lip Stain</P>
-                <P>Lip kit</P>
-    
-              </div>
-              <div>
-                <h4>FACE</h4>
-                <p>Fixing Powder</p>
-                <p>Primer</p>
-                <p>Concealer</p>
-                <p>Foundation</p>
-                <p>Compact</p>
-                <p>Powder</p>
-                <p>Setting Powder</p>
-                <P>Banana Powder</P>
-                <P>Sindoor</P>
-                <P>Blush</P>
-                <P>Cheek Stain</P>
-              </div>
-              <div>
-                <h4>EYES</h4>
-                <p>Eye Shadow</p>
-                <p>Eyeliner</p>
-                <p>Eyebrows</p>
-                <p>Glitter</p>
-                <p>Kajal</p>
-    
-              </div>
-              <div>
-                <h4>NAIL</h4>
-                <p>Nail Lacqure</p>
-                <p>Nail Polish</p>
-                <p>Matte Nail</p>
-                <p>Polish</p>
-                <h4>KITS AND COMBOS</h4>
-                <p>Makeup Kits</p>
-                <p>Bridal Makeup</p>
-                <p>Makeup Gift</p>
-                <h4>MAKEUP ACCESSORIES</h4>
-                <p>Makeup Brushes</p>
-                <p>Eyeshadow Brushes</p>
-    
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="drop_down">
-          <p>HAIR CARE</p>
-          <div id="drop_down_ul">
-            <h4>HAIR CARE</h4>
-            <p>Shampoo</p>
-            <p>Conditioner</p>
-            <p>Hair oil</p>
-            <p>Serum</p>
-    
-          </div>
-        </div>
-        <div id="drop_down">
-          <p>SKIN CARE</p>
-          <div id="drop_down_ul">
-            <p>Moisturizer</p>
-            <p>Night Cream</p>
-            <p>Eye Cream</p>
-            <p>Body Lotion</p>
-            <p>Serum</p>
-            <h4>CLEANING PRODUCT</h4>
-            <P>Cleanser</P>
-            <P>Face Wash</P>
-            <P>Scrub</P>
-            <h4>MASK</h4>
-            <p>Sheet Mask</p>
-            <p>Face Pack</p>
-    
-          </div>
-        </div>
-        <div id="drop_down">
-          <p>SANITIZING CARE</p>
-          <div id="drop_down_ul">
-            <h4>SANITIZING CARE</h4>
-            <p>Sanitizing Wipes</p>
-            <p>Hand Sanitizer</p>
-            <p>Sanitizer Kits</p>
-          </div>
-        </div>
-        <div id="drop_down">
-          <p>COLLECTION</p>
-          <div id="drop_down_ul">
-            <h4>SHOP BY COLLECTION</h4>
-            <P>MyGlamm</P>
-            <P>SUPERFOODS</P>
-            <P>Treat Love Care</P>
-            <P>Clean Beauty</P>
-            <P>SkinCare</P>
-            <P>POSE</P>
-          </div>
-        </div>
-        <div id="drop_down">
-          <p>REWARDS</p>
-          <div id="drop_down_ul">
-    
-          </div>
-        </div>
-        <div id="drop_down">
-          <p>MYGLAMM STUDIO</p>
-          <div id="drop_down_ul">
-            <h4>STUDIO</h4>
-            <P>BLOGS</P>
-          </div>
-        </div>
-        <div id="drop_down">
-          <p>OFFERS</p>
-          <div id="drop_down_ul">
-    
-          </div>
+
+
+      <!-- -------------------------------------------------------------------- -->
+
+      <div class="dropdown">
+       <a href="haircare.html"> <button class="dropbtn">HAIR CARE</button></a>
+        <div class="dropdown-content">
+          <a href="#">Shampoo</a>
+          <a href="#">Conditioner</a>
+          <a href="#">Hair oil</a>
+          <a href="#">Serum</a>
         </div>
       </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">SKIN CARE</button>
+        <div class="dropdown-content">
+          <a href="#">Moisturizer</a>
+          <a href="#">Night Cream</a>
+          <a href="#">Eye Cream</a>
+          <a href="#">Body Lotion</a>
+          <a href="#">Serum</a>
+          <h4>CLEANING PRODUCT</h4>
+          <a href="#">Cleanser</a>
+          <a href="#">Face Wash</a>
+          <a href="#">Scrub</a>
+          <h4>MASK</h4>
+          <a href="#">Sheet Mask</a>
+          <a href="#">Face Pack</a>
+        </div>
+      </div>
+
+
+      <div class="dropdown">
+        <button class="dropbtn">SANITIZING CARE</button>
+        <div class="dropdown-content">
+
+          <a href="#">Sanitizing Wipes</a>
+          <a href="#">Hand Sanitizer</a>
+          <a href="#">Sanitizer Kits</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">COLLECTION</button>
+        <div class="dropdown-content">
+          <h4>SHOP BY COLLECTION</h4>
+          <a href="#">MyGlamm</a>
+          <a href="#">SUPERFOODS</a>
+          <a href="#">Treat Love Care</a>
+          <a href="#">Clean Beauty</a>
+          <a href="#">SkinCare</a>
+          <a href="#">POSE</a>
+        </div>
+      </div>
+
+
+      <div class="dropdown">
+        <button class="dropbtn">REWARDS</button>
+        <div class="dropdown-content">
+
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">MYGLAMM STUDIO</button>
+        <div class="dropdown-content">
+          <h4>STUDIO</h4>
+          <a href="#">BLOGS</a>
+        </div>
+      </div>
+
+
+      <div class="dropdown">
+        <a href="offer.html"><button class="dropbtn">OFFERS</button></a>
+        
+        <div class="dropdown-content">
+
+          <a href="#"></a>
+        </div>
+      </div> 
+
+    </div>
+  </div>
+    <!-- --------------------navbar-end------------------------------------- -->
+    <div><h1 style="text-align: center;">MAKEUP</h1></div>
     <div id="api"></div>
+    <div id="about_section">
+      <div>
+        <h5>LIPS</h5>
+        <P>Lipstick</P>
+        <P>Crayon</P>
+        <P>Lipstick</P>
+        <P>Matte</P>
+        <P>Shine</P>
+        <P>Lip Gloss</P>
+        <P>Hi-Shine</P>
+        <P>Lipgloss</P>
+        <P>Lip Liner</P>
+        <p>Glitter</p>
+        <p>Lip Stain</p>
+        <p>Lip kit</p>
+        <p>Find your</p>
+      </div>
+
+      <div>
+        <h5>FACE</h5>
+        <p>Face Sets</p>
+        <p>Fixing Powder</p>
+        <p>Primer</p>
+        <p>Concealer</p>
+        <p>Foundection</p>
+        <p>Compact</p>
+        <p>Banana Powder</p>
+        <p>Highlighter</p>
+        <p>Blush</p>
+        <P>Bronzer</P>
+        <P>Sindoor</P>
+        <P>Cheek Stain</P>
+        <P>Makeup</P>
+        <P>Makeup Brushes</P>
+      </div>
+      <div>
+        <h5>EYES</h5>
+        <p>Eye Shadow</p>
+        <p>Eyeliner</p>
+        <p>Eyebrows</p>
+        <p>Glitter</p>
+        <p>Mascara</p>
+        <p>Kajal</p>
+        <P>Eyeshadow</P>
+        <P>Brushes</P>
+        <P>Eye Combos</P>
+
+      </div>
+      <div>
+        <h5>NAILS</h5>
+        <p>Nail Polish</p>
+        <p>Matte Nail</p>
+        <p>Polish</p>
+        <p>Nail Lacquer</p>
+
+      </div>
+      <div>
+        <h5>SKINCARE</h5>
+        <p>Moisturizer</p>
+        <p>Night Cream</p>
+        <p>Eye Cream</p>
+        <p>Body lotion</p>
+        <p>Serum</p>
+        <p>Sunscreen</p>
+        <p>SkinCare Kits</p>
+        <p>Fash Wash</p>
+        <p>Mask</p>
+        <p>Face Pack</p>
+      </div>
+      <div>
+        <h5>BATH & BODY</h5>
+        <p>Shoer Gels</p>
+        <p>Soaps</p>
+        <p>Body Lotion</p>
+        <p>Body Spray</p>
+        <p>Hand Wash</p>
+        <p>Foot Cream</p>
+      </div>
+      <div>
+        <h5>SANITIZING CARE</h5>
+        <p>Sanitizing</p>
+        <p>Wipes</p>
+        <p>Sanitizing Kits</p>
+        <p>Spray</p>
+        <p>HAnd Sanitizer</p>
+      </div>
+      <div>
+        <h5>KITS ANS COMBOS</h5>
+        <p>Makeup Kits</p>
+        <p>Bridal Makeup Kits</p>
+        <p>Makeup Combo</p>
+        <p>Makup GIft Sets</p>
+        <p>Combos</p>
+      </div>
+      <div>
+        <h5>HAIR CARE</h5>
+        <p>Shampoo</p>
+        <p>Comditionar</p>
+        <p>Hair Oil</p>
+        <p>Serum</p>
+        <p>Hair Mask</p>
+      </div>
+      <div>
+        <h5>MYGLAMMSTUDIO</h5>
+        <p>Style</p>
+        <p>Lifestyle</p>
+        <p>Trends</p>
+        <p>Tips</p>
+        <p>Beauty</p>
+        <p>Tutorial</p>
+      </div>
+      <div>
+        <h5>KNOW MORE</h5>
+        <p>About Us</p>
+        <p>Exclusive Offers</p>
+        <p>Refer & Earn</p>
+        <p>myglammPARTIES</p>
+        <p>Store Locator</p>
+        <p>Press & media</p>
+        <p>Terms & Conditions</p>
+        <p>Privacy Policy</p>
+        <p>Returns and Delivery</p>
+        <p></p>
+      </div>
+    </div>
+    <!-----------------------about_section-end--------------------------------------->
+    <div class="SUBSCRIBE">
+      <div class="Sub1">SUBSCRIBE FOR MYGLAMM EMAILS</div>
+      <div class="Sub2">EXPERIENCE THE MYGLAMM MOBILE APP</div>
+    </div>
+    <div class="search_box_end">
+      <div>
+        <input type="search" name="" id="search_input" placeholder="Please enter a vaild email ID"><input type="button"
+          value="SUBSCRIBE NOW" id="search_button">
+      </div>
+      <div>
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" id="insta"></i></a>
+        <a
+          href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i
+            class="fa-brands fa-twitter" id="twitter"></i></a>
+        <i class="fa-brands fa-pinterest" id="pinterest"></i>
+        <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube" id="youtube"></i></a>
+      </div>
+      <div>
+        <img src="https://files.myglamm.com/site-images/original/iosStore.png" alt="" class="iosStore">
+        <img src="https://files.myglamm.com/site-images/original/playStore.png" alt="" class="iosStore">
+      </div>
+    </div>
+
 </body>
 </html>
 <script src="./JS/makeup.js"></script>

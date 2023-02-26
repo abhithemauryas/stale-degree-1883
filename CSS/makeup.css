@@ -1,0 +1,40 @@
+#api{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* border: 1px solid red; */
+    margin: auto;
+
+}
+.api_div{
+    width: 90%;
+    height: 600px;
+    /* border: 1px solid red; */
+    margin-top: 5%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+}
+.desc_name{
+    font-size: 20px;
+    font-weight: bold;
+}
+.add_name{
+    font-size: 18px;
+    color: #7884A1;
+}
+.price_name{
+    font-size: 25px;
+    font-weight: 10px;
+}
+@media all and (min-width: 450px) and (max-width: 1500px){
+    #api{
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: repeat(2, 1fr);
+    }
+}
+@media all and (min-width: 100px) and (max-width: 450px){
+    #api{
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-areas: repeat(1, 1fr);
+    }
+}

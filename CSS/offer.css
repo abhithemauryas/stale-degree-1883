@@ -13,30 +13,38 @@ body {
             width: 70px;
             height: 40px;
             border-radius: 30px;
+            margin-left: 2%;
+            font-weight: bold;
         }
-          .all1{
-            background-color: #FF9793;
-            color: white;
+          .all2{
+            background-color: white;
+            color:  #FF9793;
             display: block;
-            width: 70px;
+            width: 100px;
             height: 40px;
             border-radius: 30px;
+            margin-left: 2%;
+            font-weight: bold;
         }
-          .all1{
-            background-color: #FF9793;
-            color: white;
+          .all3{
+            background-color: white;
+            color:  #FF9793;
             display: block;
-            width: 70px;
+            width: 110px;
             height: 40px;
             border-radius: 30px;
+            margin-left: 2%;
+            font-weight: bold;
         }
-          .all1{
-            background-color: #FF9793;
-            color: white;
+          .all4{
+            background-color: white;
+            color:  #FF9793;
             display: block;
-            width: 70px;
+            width: 120px;
             height: 40px;
             border-radius: 30px;
+            margin-left: 2%;
+            font-weight: bold;
         }
         #main_offers_box{
             display: flex;
@@ -53,6 +61,11 @@ body {
             background: white;
             position: sticky;
         }
+        #button_all1{
+            display: flex;
+            padding-left: 28%;
+            
+        }
         #offers_name>div{
             padding: 2% 10px 10% 10px;
         }
@@ -62,7 +75,10 @@ body {
         #offers_coupons{
             width: 65%;
             margin-left: 20%;
-            border: 1px solid red;
+           
+        }
+        #offers_coupons>h3{
+            text-align: center;
         }
         #offers_coupons>div>div{
             display: flex;
